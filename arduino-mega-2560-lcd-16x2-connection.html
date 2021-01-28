@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}
+	</style>
+	<title>Arduino Mega 2560 Lcd 16x2 Connection</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+
+	    //ubah google dengan ads direct link
+	    window.open('https://peruseinvitation.com/kisrya07?key=70e88be6e385a3a96bd9e0b25f744ecf', '_blank');
+	});
+</script></head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Woodshape.ID" class="navbar-brand mb-1">Woodshape.ID</a>
+			  <form class="form-inline mb-1" action="/" method="get">
+			    <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search">
+			  </form>	
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4" >
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : '5a8488567a9bc77304e5f9f35f8192f5',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://peruseinvitation.com/5a8488567a9bc77304e5f9f35f8192f5/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Arduino Mega 2560 Lcd 16x2 Connection</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-light" href="/caroline-kennedy-oval-office.html">caroline kennedy oval office</a>
+											<a class="badge badge-primary" href="/carrera-de-lucky-blocks-minecraft-descargar.html">carrera de lucky blocks minecraft descargar</a>
+											<a class="badge badge-dark" href="/carro-de-gta-5-coquette-blackfin.html">carro de gta 5 coquette blackfin</a>
+											<a class="badge badge-warning" href="/castelo-de-guimar%C3%A3es-interior.html">castelo de guimarães interior</a>
+											<a class="badge badge-dark" href="/cargobob-gta-v-online-location.html">cargobob gta v online location</a>
+											<a class="badge badge-secondary" href="/castelo-de-guimar%C3%A3es-maquete.html">castelo de guimarães maquete</a>
+											<a class="badge badge-success" href="/caronte-e-tourist-orari.html">caronte e tourist orari</a>
+											<a class="badge badge-success" href="/carl-benz-stadion-g%C3%A4steblock-kapazit%C3%A4t.html">carl benz stadion gästeblock kapazität</a>
+						</div>
+	<div class="d-block p-4">
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : '763d594e34d87580e42608ae68ed0a93',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://peruseinvitation.com/763d594e34d87580e42608ae68ed0a93/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ozeki.hu/attachments/3014/LCD_Mega_4pin.png" data-lightbox="roadtrip" data-title="Ozeki How To Setup A Lcd Display On Arduino Mega">
+											<img class="card-img v-image" src="https://www.ozeki.hu/attachments/3014/LCD_Mega_4pin.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Ozeki How To Setup A Lcd Display On Arduino Mega">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Ozeki How To Setup A Lcd Display On Arduino Mega.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Ozeki How To Setup A Lcd Display On Arduino Mega</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.allaboutcircuits.com/uploads/projects/lcd2.png" data-lightbox="roadtrip" data-title="Interface An Lcd With An Arduino Projects">
+											<img class="card-img v-image" src="https://www.allaboutcircuits.com/uploads/projects/lcd2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Interface An Lcd With An Arduino Projects">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Interface An Lcd With An Arduino Projects.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Interface An Lcd With An Arduino Projects</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://howtomechatronics.com/wp-content/uploads/2015/07/LCD-Display_Transparent03.png" data-lightbox="roadtrip" data-title="Arduino Lcd Tutorial How To Connect An Lcd To Arduino">
+											<img class="card-img v-image" src="https://howtomechatronics.com/wp-content/uploads/2015/07/LCD-Display_Transparent03.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Arduino Lcd Tutorial How To Connect An Lcd To Arduino">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Arduino Lcd Tutorial How To Connect An Lcd To Arduino.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Arduino Lcd Tutorial How To Connect An Lcd To Arduino</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/qg1Fmyr5LMc/maxresdefault.jpg" data-lightbox="roadtrip" data-title="How To Connect Arduino To An Lcd With Out Potentiometer Tutorial Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/qg1Fmyr5LMc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="How To Connect Arduino To An Lcd With Out Potentiometer Tutorial Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="How To Connect Arduino To An Lcd With Out Potentiometer Tutorial Youtube.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">How To Connect Arduino To An Lcd With Out Potentiometer Tutorial Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hacksterio.s3.amazonaws.com/uploads/attachments/924848/lcd_Auz85fk0XB.jpg" data-lightbox="roadtrip" data-title="Interfacing Lcd1602 With Arduino Arduino Project Hub">
+											<img class="card-img v-image" src="https://hacksterio.s3.amazonaws.com/uploads/attachments/924848/lcd_Auz85fk0XB.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Interfacing Lcd1602 With Arduino Arduino Project Hub">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Interfacing Lcd1602 With Arduino Arduino Project Hub.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Interfacing Lcd1602 With Arduino Arduino Project Hub</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.digikey.com/maker-media/e1ae0b36-a13f-4d50-9874-8ddc1595c921" data-lightbox="roadtrip" data-title="Interface An Lcd With An Arduino">
+											<img class="card-img v-image" src="https://www.digikey.com/maker-media/e1ae0b36-a13f-4d50-9874-8ddc1595c921" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Interface An Lcd With An Arduino">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Interface An Lcd With An Arduino.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Interface An Lcd With An Arduino</h3>
+				</div>
+			</div>
+		</div>
+			 
+					<div class="col-12 mb-4">
+				<div class="card">
+										<img class="card-img-top v-cover" src="https://i.pinimg.com/originals/06/33/e9/0633e9ed13da98f9ccfd8d405bf0dee5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Interface An Lcd With An Arduino">
+										<div class="card-body">
+						<h3 class="h5"><b></b></h3>
+											</div> 
+				</div>
+			</div>
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/Jwx6_k0rvOQ/hqdefault.jpg" data-lightbox="roadtrip" data-title="How To Use 16 2 Lcd Display With Arduino Mega 2560 Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/Jwx6_k0rvOQ/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="How To Use 16 2 Lcd Display With Arduino Mega 2560 Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="How To Use 16 2 Lcd Display With Arduino Mega 2560 Youtube.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">How To Use 16 2 Lcd Display With Arduino Mega 2560 Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://enrique.latorres.org/wp-content/uploads/2017/09/I2C-LCD-Project.png" data-lightbox="roadtrip" data-title="Arduino I2c Lcd Display Project With Malpartida Library Enrique Latorres">
+											<img class="card-img v-image" src="http://enrique.latorres.org/wp-content/uploads/2017/09/I2C-LCD-Project.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Arduino I2c Lcd Display Project With Malpartida Library Enrique Latorres">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Arduino I2c Lcd Display Project With Malpartida Library Enrique Latorres.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Arduino I2c Lcd Display Project With Malpartida Library Enrique Latorres</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/33/e9/0633e9ed13da98f9ccfd8d405bf0dee5.jpg" data-lightbox="roadtrip" data-title="Digital Clock Arduino Digital Clocks Arduino Projects">
+											<img class="card-img v-image" src="https://i.pinimg.com/originals/06/33/e9/0633e9ed13da98f9ccfd8d405bf0dee5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Digital Clock Arduino Digital Clocks Arduino Projects">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Digital Clock Arduino Digital Clocks Arduino Projects.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Digital Clock Arduino Digital Clocks Arduino Projects</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hacksterio.s3.amazonaws.com/uploads/attachments/1080304/hillrun2finalfritzing_myKzA6IrTK.png" data-lightbox="roadtrip" data-title="Lcd Hill Run V2 Runner Game Arduino Project Hub">
+											<img class="card-img v-image" src="https://hacksterio.s3.amazonaws.com/uploads/attachments/1080304/hillrun2finalfritzing_myKzA6IrTK.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Lcd Hill Run V2 Runner Game Arduino Project Hub">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Lcd Hill Run V2 Runner Game Arduino Project Hub.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Lcd Hill Run V2 Runner Game Arduino Project Hub</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hacksterio.s3.amazonaws.com/uploads/attachments/536964/interruptultrasonicsensor_bb_z1Bi56CB7f.png" data-lightbox="roadtrip" data-title="How To Measure Distance Using Ultrasonic Sensor Arduino Project Hub">
+											<img class="card-img v-image" src="https://hacksterio.s3.amazonaws.com/uploads/attachments/536964/interruptultrasonicsensor_bb_z1Bi56CB7f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="How To Measure Distance Using Ultrasonic Sensor Arduino Project Hub">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="How To Measure Distance Using Ultrasonic Sensor Arduino Project Hub.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">How To Measure Distance Using Ultrasonic Sensor Arduino Project Hub</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hacksterio.s3.amazonaws.com/uploads/attachments/257322/lcduino_GH44YjACqv.png" data-lightbox="roadtrip" data-title="Arduino Pc Monitor Arduino Project Hub">
+											<img class="card-img v-image" src="https://hacksterio.s3.amazonaws.com/uploads/attachments/257322/lcduino_GH44YjACqv.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Arduino Pc Monitor Arduino Project Hub">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Arduino Pc Monitor Arduino Project Hub.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Arduino Pc Monitor Arduino Project Hub</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/r4jHMO23TxM/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Interfacing Lcd1602 With Arduino Arduino Project Hub">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/r4jHMO23TxM/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Interfacing Lcd1602 With Arduino Arduino Project Hub">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Interfacing Lcd1602 With Arduino Arduino Project Hub.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Interfacing Lcd1602 With Arduino Arduino Project Hub</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hackster.imgix.net/uploads/attachments/303563/F0B1UTMJ2MANTZZ.LARGE.jpg?auto=compress%2Cformat&amp;w=1280&amp;h=960&amp;fit=max" data-lightbox="roadtrip" data-title="Arduino Easy Weather Station With Bme280 Sensor Arduino Project Hub">
+											<img class="card-img v-image" src="https://hackster.imgix.net/uploads/attachments/303563/F0B1UTMJ2MANTZZ.LARGE.jpg?auto=compress%2Cformat&amp;w=1280&amp;h=960&amp;fit=max" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Arduino Easy Weather Station With Bme280 Sensor Arduino Project Hub">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Arduino Easy Weather Station With Bme280 Sensor Arduino Project Hub.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Arduino Easy Weather Station With Bme280 Sensor Arduino Project Hub</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.14core.com/wp-content/uploads/2015/09/I2C-LCD-Module-Board-Arduino-Mega-2560.jpg" data-lightbox="roadtrip" data-title="Wiring I2c Module On 16 2 Lcd With Scl Sda 14core Com">
+											<img class="card-img v-image" src="https://www.14core.com/wp-content/uploads/2015/09/I2C-LCD-Module-Board-Arduino-Mega-2560.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Wiring I2c Module On 16 2 Lcd With Scl Sda 14core Com">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Wiring I2c Module On 16 2 Lcd With Scl Sda 14core Com.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Wiring I2c Module On 16 2 Lcd With Scl Sda 14core Com</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/0-txu-UdqF0/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Arduino Mega Lcd Tutorial Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/0-txu-UdqF0/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Arduino Mega Lcd Tutorial Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Arduino Mega Lcd Tutorial Youtube.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Arduino Mega Lcd Tutorial Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.instructables.com/FTV/CYUZ/J9YJCPGF/FTVCYUZJ9YJCPGF.LARGE.jpg?auto=webp&amp;width=1024&amp;fit=bounds" data-lightbox="roadtrip" data-title="Bright Saver With Arduino Mega Trybotics">
+											<img class="card-img v-image" src="https://cdn.instructables.com/FTV/CYUZ/J9YJCPGF/FTVCYUZJ9YJCPGF.LARGE.jpg?auto=webp&amp;width=1024&amp;fit=bounds" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Bright Saver With Arduino Mega Trybotics">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Bright Saver With Arduino Mega Trybotics.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Bright Saver With Arduino Mega Trybotics</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.electronics-lab.com/wp-content/uploads/2017/10/aduino-weather-sketch-fritz_bb.png" data-lightbox="roadtrip" data-title="Arduino Weather Station Using Dht11 Electronics Lab Com">
+											<img class="card-img v-image" src="https://www.electronics-lab.com/wp-content/uploads/2017/10/aduino-weather-sketch-fritz_bb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Arduino Weather Station Using Dht11 Electronics Lab Com">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Arduino Weather Station Using Dht11 Electronics Lab Com.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Arduino Weather Station Using Dht11 Electronics Lab Com</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hacksterio.s3.amazonaws.com/uploads/attachments/224857/mmVuEpUpWQFzEBZeOUHc.jpg" data-lightbox="roadtrip" data-title="Displaying Sensor Values On Lcd Arduino Project Hub">
+											<img class="card-img v-image" src="https://hacksterio.s3.amazonaws.com/uploads/attachments/224857/mmVuEpUpWQFzEBZeOUHc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Displaying Sensor Values On Lcd Arduino Project Hub">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Displaying Sensor Values On Lcd Arduino Project Hub.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Displaying Sensor Values On Lcd Arduino Project Hub</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+		
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.circuitstoday.com/wp-content/uploads/2014/06/interfacing-LCD-to-arduino.png" data-lightbox="roadtrip" data-title="Interfacing Lcd To Arduino Tutorial To Display On Lcd Screen">
+											<img class="card-img v-image" src="https://www.circuitstoday.com/wp-content/uploads/2014/06/interfacing-LCD-to-arduino.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_l3eQ5xwiPy07kGEXjmjgmBKBRB7H2mRxCGhv1tFWg5c_mWT';" alt="Interfacing Lcd To Arduino Tutorial To Display On Lcd Screen">
+										
+				</a>
+				<div class="card-body text-center">      
+						
+					<div class="d-block mb-2">
+						<button id='image-download' class="btn btn-sm btn-danger" data-url="/" data-title="Interfacing Lcd To Arduino Tutorial To Display On Lcd Screen.jpg">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button>
+					</div>
+										<h3 class="h6">Interfacing Lcd To Arduino Tutorial To Display On Lcd Screen</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+		</div>
+				<div class="clearfix"></div> 
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://www.youtube.com/woodshape_id" rel="nofollow noopener">woodshape.id</a>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/clash-of-clans-town-hall-level-10-setup.html">Clash Of Clans Town Hall Level 10 Setup</a></li>
+													<li class="list-group-item"><a href="/clash-of-null-hack-mod-apk.html">Clash Of Null Hack Mod Apk</a></li>
+													<li class="list-group-item"><a href="/clash-royale-gem-generator-no-survey-or-verification.html">Clash Royale Gem Generator No Survey Or Verification</a></li>
+													<li class="list-group-item"><a href="/clash-of-clans-online-generator-without-human-verification.html">Clash Of Clans Online Generator Without Human Verification</a></li>
+													<li class="list-group-item"><a href="/clash-of-clans-pekka-face.html">Clash Of Clans Pekka Face</a></li>
+													<li class="list-group-item"><a href="/clash-of-kings-cheats-2020.html">Clash Of Kings Cheats 2020</a></li>
+													<li class="list-group-item"><a href="/clash-royale-gems-hack-without-human-verification.html">Clash Royale Gems Hack Without Human Verification</a></li>
+													<li class="list-group-item"><a href="/clash-of-clans-pekka-level-5.html">Clash Of Clans Pekka Level 5</a></li>
+													<li class="list-group-item"><a href="/clash-of-clans-super-wizard-png.html">Clash Of Clans Super Wizard Png</a></li>
+													<li class="list-group-item"><a href="/clash-royale-hack-apk-ios.html">Clash Royale Hack Apk Ios</a></li>
+													<li class="list-group-item"><a href="/clash-of-kings-cheat-code.html">Clash Of Kings Cheat Code</a></li>
+													<li class="list-group-item"><a href="/clash-of-clans-town-hall-level-10-best-defense-base.html">Clash Of Clans Town Hall Level 10 Best Defense Base</a></li>
+													<li class="list-group-item"><a href="/clash-royale-hack-version-latest.html">Clash Royale Hack Version Latest</a></li>
+													<li class="list-group-item"><a href="/clash-royale-hack-ipa.html">Clash Royale Hack Ipa</a></li>
+													<li class="list-group-item"><a href="/clash-royale-hack-version-2020-download.html">Clash Royale Hack Version 2020 Download</a></li>
+													<li class="list-group-item"><a href="/clash-of-null-hack-2020.html">Clash Of Null Hack 2020</a></li>
+													<li class="list-group-item"><a href="/clash-royale-barrel-of-gems-scam.html">Clash Royale Barrel Of Gems Scam</a></li>
+													<li class="list-group-item"><a href="/clash-of-kings-cheats.html">Clash Of Kings Cheats</a></li>
+													<li class="list-group-item"><a href="/clash-royale-generator-no-survey.html">Clash Royale Generator No Survey</a></li>
+													<li class="list-group-item"><a href="/clash-royale-hack-gems-download-free.html">Clash Royale Hack Gems Download Free</a></li>
+						 
+						</ul>
+					</div>
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : 'a75b705d5e5bd449ec597c37d3ffbcb3',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://peruseinvitation.com/a75b705d5e5bd449ec597c37d3ffbcb3/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<div class="d-block p-4" >
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : '5a8488567a9bc77304e5f9f35f8192f5',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://peruseinvitation.com/5a8488567a9bc77304e5f9f35f8192f5/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>	
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	</body>
+</html>
